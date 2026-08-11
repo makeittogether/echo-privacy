@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Echo</title>
+<style>
+  :root {
+    --bg: #FAFAF9;
+    --surface: #FFFFFF;
+    --ink: #2A2B29;
+    --ink-secondary: rgba(42,43,41,0.65);
+    --accent: #3E8C74;
+    --accent-deep: #2C6B58;
+    --hairline: #EBE8E1;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 56px 24px 96px;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 40px;
+  }
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+  .brand span {
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+  }
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    margin: 0 0 6px;
+  }
+  .meta {
+    color: var(--ink-secondary);
+    font-size: 13.5px;
+    margin-bottom: 40px;
+  }
+  h2 {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 40px 0 12px;
+    letter-spacing: -0.1px;
+  }
+  h3 {
+    font-size: 14.5px;
+    font-weight: 600;
+    color: var(--accent-deep);
+    margin: 22px 0 6px;
+  }
+  p, li {
+    font-size: 15px;
+    color: var(--ink);
+  }
+  ul { padding-left: 20px; }
+  a { color: var(--accent); }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--hairline);
+    border-radius: 16px;
+    padding: 28px 32px;
+  }
+  hr {
+    border: none;
+    border-top: 1px solid var(--hairline);
+    margin: 40px 0;
+  }
+  .footer {
+    margin-top: 48px;
+    color: var(--ink-secondary);
+    font-size: 13px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand"><div class="dot"></div><span>Echo</span></div>
+
+    <div class="card">
+      <h1>Privacy Policy</h1>
+      <div class="meta">Effective date: August 11, 2026 &middot; Last updated: August 11, 2026</div>
+
+      <h2>Who this is from</h2>
+      <p>Echo is developed by Sandeep Baliyan. If you have questions about this policy or your data, contact:
+      <a href="mailto:sandeepbbaliyan@gmail.com">sandeepbbaliyan@gmail.com</a>.</p>
+
+      <h2>What Echo does</h2>
+      <p>Echo is a personal memory and to-do app. You capture things by typing, speaking, or photographing them; Echo remembers them and can answer questions about your own history. Echo is not a wellness, mood-tracking, or social app, and it does not have any social or sharing features.</p>
+
+      <h2>Information we collect</h2>
+
+      <h3>Account information</h3>
+      <p>When you create an account, we collect your email address and a securely hashed password (we never see or store your password in plain text &mdash; this is handled by our authentication provider, Supabase). If you sign in with Google, we receive your email address and name from Google; we do not receive your Google password.</p>
+
+      <h3>Content you create</h3>
+      <ul>
+        <li><strong>Journal entries</strong> &mdash; the text you type or dictate, along with the date/time you specify for each entry.</li>
+        <li><strong>To-dos</strong> &mdash; task text, due dates/times, completion status, and recurrence settings you set.</li>
+        <li><strong>Photos you scan</strong> &mdash; when you use the photo-scan feature, the image is sent securely to our AI provider (Anthropic) for one-time text extraction. We do not store the photo itself &mdash; only the extracted summary and any to-dos you choose to confirm on the review screen are saved. If you don't confirm anything, nothing from that photo is saved at all.</li>
+        <li><strong>Voice input</strong> &mdash; dictation is processed using your device's own built-in speech-to-text. Your voice audio is never sent to Echo's servers or to any third party &mdash; only the resulting text is saved, exactly as if you had typed it.</li>
+      </ul>
+
+      <h3>Automatically collected information</h3>
+      <p>Usage metadata for our AI features (Ask Echo and photo scanning): timestamps, token counts, and estimated cost per request, used only to enforce fair-use rate limits. We do not use third-party analytics or advertising SDKs, do not track you across other apps or websites, and do not sell your data, ever.</p>
+
+      <h2>How we use your information</h2>
+      <ul>
+        <li>To provide the core features: storing your entries and to-dos, syncing them across your signed-in devices, and letting you search and review them.</li>
+        <li>To answer your questions in Ask Echo, by sending the relevant portion of your own history to Anthropic's Claude API to generate an answer grounded only in what you actually wrote.</li>
+        <li>To extract text from photos you choose to scan, for the one-time purpose of turning the photo into editable text you review before saving.</li>
+        <li>To send you an optional daily reminder notification, scheduled entirely on your device.</li>
+        <li>To enforce daily/monthly usage limits on the AI features.</li>
+      </ul>
+      <p>We do not use your content for advertising, AI model training, or analytics beyond directly fulfilling the feature you invoked.</p>
+
+      <h2>Who we share information with</h2>
+      <ul>
+        <li><strong>Supabase</strong> &mdash; hosts your account and content in a secured database, acting as our data processor.</li>
+        <li><strong>Anthropic</strong> &mdash; receives only the specific content needed to answer your Ask Echo question or extract text from a scanned photo, at the moment you make that request.</li>
+      </ul>
+      <p>We do not share your information with advertisers or data brokers, and we do not sell it. We may disclose information if required by law, or to protect the rights, safety, or property of Echo or its users.</p>
+
+      <h2>Your data, your control</h2>
+      <ul>
+        <li><strong>Export</strong> &mdash; a complete copy of everything Echo holds about you, any time, from Progress &rarr; Settings &rarr; Export my data.</li>
+        <li><strong>Delete your account</strong> &mdash; permanently, right from the app, from Progress &rarr; Settings &rarr; Delete my account. Immediate and irreversible.</li>
+        <li><strong>Correct or edit</strong> &mdash; edit or delete individual entries and to-dos at any time within the app.</li>
+      </ul>
+
+      <h2>Data retention</h2>
+      <p>We retain your information for as long as your account is active. If you delete your account, your data is deleted immediately and permanently, aside from standard database backup rotation (typically a few days) after which it is fully purged.</p>
+
+      <h2>Security</h2>
+      <ul>
+        <li>All data is encrypted in transit (HTTPS/TLS).</li>
+        <li>Row-level security policies ensure only you can read or write your own entries, to-dos, and scans.</li>
+        <li>The AI provider API key is stored server-side only and is never exposed to the app or any client device.</li>
+      </ul>
+
+      <h2>Children's privacy</h2>
+      <p>Echo is not directed at children under 13, and we do not knowingly collect information from children under that age.</p>
+
+      <h2>International users</h2>
+      <p>Your information may be processed in countries other than your own, wherever our service providers (Supabase, Anthropic) operate their infrastructure.</p>
+
+      <h2>Changes to this policy</h2>
+      <p>We may update this policy from time to time. We'll update the "Last updated" date above when we do.</p>
+
+      <h2>Contact</h2>
+      <p>Questions about this policy or your data: <a href="mailto:sandeepbbaliyan@gmail.com">sandeepbbaliyan@gmail.com</a></p>
+    </div>
+
+    <div class="footer">&copy; 2026 Echo</div>
+  </div>
+</body>
+</html>
