@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Echo</title>
+<style>
+  :root {
+    --bg: #FAFAF9;
+    --surface: #FFFFFF;
+    --ink: #2A2B29;
+    --ink-secondary: rgba(42,43,41,0.65);
+    --accent: #3E8C74;
+    --accent-deep: #2C6B58;
+    --hairline: #EBE8E1;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 56px 24px 96px;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 40px;
+  }
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
+  .brand span {
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+  }
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    margin: 0 0 6px;
+  }
+  .meta {
+    color: var(--ink-secondary);
+    font-size: 13.5px;
+    margin-bottom: 40px;
+  }
+  h2 {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 40px 0 12px;
+    letter-spacing: -0.1px;
+  }
+  h3 {
+    font-size: 14.5px;
+    font-weight: 600;
+    color: var(--accent-deep);
+    margin: 22px 0 6px;
+  }
+  p, li {
+    font-size: 15px;
+    color: var(--ink);
+  }
+  ul { padding-left: 20px; }
+  a { color: var(--accent); }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--hairline);
+    border-radius: 16px;
+    padding: 28px 32px;
+  }
+  hr {
+    border: none;
+    border-top: 1px solid var(--hairline);
+    margin: 40px 0;
+  }
+  .footer {
+    margin-top: 48px;
+    color: var(--ink-secondary);
+    font-size: 13px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand"><div class="dot"></div><span>Echo</span></div>
+
+    <div class="card">
+      <h1>Support</h1>
+      <div class="meta">Echo &middot; personal memory, to-dos and medication tracking</div>
+
+      <h2>Get in touch</h2>
+      <p>Email <a href="mailto:sandeepbbaliyan@gmail.com">sandeepbbaliyan@gmail.com</a> and
+      you'll get a reply from a person, usually within a couple of days. There is no
+      support team &mdash; Echo is made by one developer, and that is who answers.</p>
+      <p>It helps to include your device and iOS version, and what you were doing when
+      something went wrong. If it involves a medicine or a journal entry, please describe
+      it rather than sending a screenshot with your own content in it &mdash; we do not
+      need to see your data to help.</p>
+
+      <h2>Common questions</h2>
+
+      <h3>Where did my entries go after signing in?</h3>
+      <p>Signing in with a different method, or a different email address, creates a
+      separate account with its own data. If you first signed up with an email address and
+      later used Sign in with Apple, and Apple gave you a private relay address, those are
+      two accounts. Sign out and back in using the method you started with. Nothing has
+      been deleted.</p>
+
+      <h3>Dictation isn't working</h3>
+      <p>Echo needs both microphone and speech-recognition permission. Check
+      Settings &rarr; Echo and make sure both are on. Dictation uses Apple's own speech
+      recognition; Echo never receives the audio.</p>
+
+      <h3>I'm not getting medicine reminders</h3>
+      <p>Check three things, in order: notifications are allowed for Echo in iOS Settings;
+      <strong>Med reminders</strong> is on in Echo under your account menu &rarr; Settings;
+      and the medicine has a scheduled time rather than being marked as-needed. As-needed
+      medicines never generate reminders &mdash; that is deliberate, not a fault.</p>
+
+      <h3>I deleted a medicine by mistake</h3>
+      <p>Deleted medicines stay in <strong>Recently deleted</strong> at the bottom of the
+      Meds tab for seven days, with everything you had recorded. Tap Restore. After seven
+      days, or if you chose &ldquo;Delete permanently&rdquo;, it is gone.</p>
+
+      <h3>Is the adherence percentage counting something I can't see?</h3>
+      <p>It counts scheduled doses only, over the last 30 days, and a dose counts as on
+      time if it was marked within two hours of when it was due. As-needed medicines are
+      never counted, because there is no appointed time to be late for.</p>
+
+      <h3>How do I get my data out?</h3>
+      <p>Account menu &rarr; <strong>Export my data</strong>. You get a JSON file with
+      everything Echo holds for you, through the normal share sheet.</p>
+
+      <h3>How do I delete my account?</h3>
+      <p>Account menu &rarr; <strong>Delete my account</strong>. It is immediate and
+      irreversible, and removes your entries, to-dos, lists, medicines, dose history and
+      scans from our servers.</p>
+
+      <h2>Privacy</h2>
+      <p>Echo stores health information when you use the Meds feature, and sends
+      photographed prescriptions to an AI provider to read them. All of that is described
+      plainly in the <a href="./">privacy policy</a>.</p>
+
+      <h2>Reporting something urgent</h2>
+      <p>If you have found a problem affecting the accuracy of medication information
+      &mdash; a dose showing the wrong time, a reminder that does not arrive, an adherence
+      figure that looks wrong &mdash; please say so in the subject line and it will be
+      looked at first.</p>
+      <p>Echo tracks what a prescriber wrote. It does not give medical advice, and it is
+      not a substitute for asking a pharmacist or doctor.</p>
+    </div>
+
+    <div class="footer">&copy; 2026 Echo</div>
+  </div>
+</body>
+</html>
