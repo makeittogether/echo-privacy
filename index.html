@@ -98,62 +98,82 @@
 
     <div class="card">
       <h1>Privacy Policy</h1>
-      <div class="meta">Effective date: August 11, 2026 &middot; Last updated: August 11, 2026</div>
+      <div class="meta">Effective date: August 13, 2026 &middot; Last updated: August 13, 2026</div>
 
       <h2>Who this is from</h2>
       <p>Echo is developed by Sandeep Baliyan. If you have questions about this policy or your data, contact:
       <a href="mailto:sandeepbbaliyan@gmail.com">sandeepbbaliyan@gmail.com</a>.</p>
 
       <h2>What Echo does</h2>
-      <p>Echo is a personal memory and to-do app. You capture things by typing, speaking, or photographing them; Echo remembers them and can answer questions about your own history. Echo is not a wellness, mood-tracking, or social app, and it does not have any social or sharing features.</p>
+      <p>Echo is a personal memory, to-do and medication-tracking app. You capture things by typing, speaking, or photographing them; Echo remembers them and can answer questions about your own history. Echo is not a wellness or mood-tracking app, it gives no medical advice, and it has no social or sharing features &mdash; nothing you write is visible to anyone but you.</p>
 
       <h2>Information we collect</h2>
 
       <h3>Account information</h3>
-      <p>When you create an account, we collect your email address and a securely hashed password (we never see or store your password in plain text &mdash; this is handled by our authentication provider, Supabase). If you sign in with Google, we receive your email address and name from Google; we do not receive your Google password.</p>
+      <p>When you create an account, we collect your email address and a securely hashed password (we never see or store your password in plain text &mdash; this is handled by our authentication provider, Supabase).</p>
+      <p>If you sign in with Google, we receive your email address and name from Google. If you sign in with Apple, we receive your email address and, if you share it, your name. Apple lets you hide your real address, in which case we only ever receive an anonymous forwarding address and never learn your actual one. We do not receive your Google or Apple password in either case.</p>
+      <p>Signing in with a different method, or a different email address, creates a separate account with separate data &mdash; the accounts are not merged.</p>
 
       <h3>Content you create</h3>
       <ul>
-        <li><strong>Journal entries</strong> &mdash; the text you type or dictate, along with the date/time you specify for each entry.</li>
-        <li><strong>To-dos</strong> &mdash; task text, due dates/times, completion status, and recurrence settings you set.</li>
-        <li><strong>Photos you scan</strong> &mdash; when you use the photo-scan feature, the image is sent securely to our AI provider (Anthropic) for one-time text extraction. We do not store the photo itself &mdash; only the extracted summary and any to-dos you choose to confirm on the review screen are saved. If you don't confirm anything, nothing from that photo is saved at all.</li>
-        <li><strong>Voice input</strong> &mdash; dictation is processed using your device's own built-in speech-to-text. Your voice audio is never sent to Echo's servers or to any third party &mdash; only the resulting text is saved, exactly as if you had typed it.</li>
+        <li><strong>Journal entries</strong> &mdash; the text you type or dictate, along with the date and time you set for each entry.</li>
+        <li><strong>To-dos</strong> &mdash; task text, due dates and times, completion status, and recurrence settings.</li>
+        <li><strong>Lists</strong> &mdash; list names and the items in them, including which items you have checked off.</li>
+        <li><strong>Medication information</strong> &mdash; see the dedicated section below, because this is health information and deserves to be described plainly.</li>
+        <li><strong>Photos you scan</strong> &mdash; when you use the photo-scan feature, the image is sent securely to our AI provider (Anthropic) for one-time text extraction. We do not store the photo itself. What is saved is the extracted text: a journal entry recording what you scanned, plus any to-dos or medicines you confirm on the review screen. Nothing is saved until you confirm it.</li>
       </ul>
+
+      <h3>Health information (medication tracking)</h3>
+      <p>Echo's Meds feature stores health information, and we want to be direct about it:</p>
+      <ul>
+        <li><strong>What we store</strong> &mdash; medicine names, dosages, schedules and courses (including start and end dates), whether a medicine is taken on a schedule or only as needed, any maximum-per-day or minimum-interval limits printed on the label, and a record of each dose: when it was due and when you marked it taken.</li>
+        <li><strong>Where it comes from</strong> &mdash; either you typed it in, or Echo read it off a prescription label or packet you chose to photograph.</li>
+        <li><strong>What we do with it</strong> &mdash; show you what is due, remind you if you turn reminders on, and calculate how many of your doses were taken on time.</li>
+        <li><strong>When it leaves the device</strong> &mdash; a photographed prescription label is sent to Anthropic for one-time text extraction, exactly like any other scan. Medication entries may also be included in what is sent to Anthropic when you ask Echo a question that touches on them (for example, &ldquo;did I miss any doses this month?&rdquo;), because Ask Echo answers from your own records.</li>
+        <li><strong>What we never do</strong> &mdash; we do not sell it, share it with insurers, employers, advertisers or data brokers, use it for advertising, or use it to train AI models. Echo does not provide medical advice; where it shows a limit, it is repeating what the label said, not telling you what to take.</li>
+      </ul>
+
+      <h3>Voice input</h3>
+      <p>Dictation uses Apple's own speech recognition built into iOS (the same system that powers the dictation key on your keyboard). Depending on your device, your language, and iOS settings, Apple may process this recognition on your device or on Apple's servers. Where it is processed on Apple's servers, your audio is handled by Apple under Apple's privacy policy.</p>
+      <p><strong>Echo itself never receives, stores or transmits your voice audio</strong> &mdash; only the resulting text, which is saved exactly as if you had typed it. We have no access to the audio at any point, and no third party other than Apple's own speech service is involved.</p>
 
       <h3>Automatically collected information</h3>
       <p>Usage metadata for our AI features (Ask Echo and photo scanning): timestamps, token counts, and estimated cost per request, used only to enforce fair-use rate limits. We do not use third-party analytics or advertising SDKs, do not track you across other apps or websites, and do not sell your data, ever.</p>
 
       <h2>How we use your information</h2>
       <ul>
-        <li>To provide the core features: storing your entries and to-dos, syncing them across your signed-in devices, and letting you search and review them.</li>
-        <li>To answer your questions in Ask Echo, by sending the relevant portion of your own history to Anthropic's Claude API to generate an answer grounded only in what you actually wrote.</li>
-        <li>To extract text from photos you choose to scan, for the one-time purpose of turning the photo into editable text you review before saving.</li>
-        <li>To send you an optional daily reminder notification, scheduled entirely on your device.</li>
-        <li>To enforce daily/monthly usage limits on the AI features.</li>
+        <li>To provide the core features: storing your entries, to-dos, lists and medicines, syncing them across your signed-in devices, and letting you search and review them.</li>
+        <li>To answer your questions in Ask Echo, by sending the relevant portion of your own records to Anthropic's Claude API to generate an answer grounded only in what you actually recorded.</li>
+        <li>To extract text from photos you choose to scan, for the one-time purpose of turning the photo into text you review before saving.</li>
+        <li>To send you reminders you have asked for &mdash; an optional daily nudge, and optional reminders for to-dos and scheduled doses &mdash; scheduled entirely on your device.</li>
+        <li>To enforce daily and monthly usage limits on the AI features.</li>
       </ul>
-      <p>We do not use your content for advertising, AI model training, or analytics beyond directly fulfilling the feature you invoked.</p>
+      <p>We do not use your journal content, to-do content, medication information, or photos for advertising, AI model training, or analytics &mdash; only to fulfil the feature you invoked.</p>
 
       <h2>Who we share information with</h2>
       <ul>
         <li><strong>Supabase</strong> &mdash; hosts your account and content in a secured database, acting as our data processor.</li>
-        <li><strong>Anthropic</strong> &mdash; receives only the specific content needed to answer your Ask Echo question or extract text from a scanned photo, at the moment you make that request.</li>
+        <li><strong>Anthropic</strong> &mdash; receives only the specific content needed to answer your Ask Echo question or extract text from a scanned photo, at the moment you make that request. This can include health information where that is what you asked about or photographed. Anthropic does not use API content to train their models by default.</li>
+        <li><strong>Apple</strong> &mdash; where iOS performs speech recognition on Apple's servers rather than on your device, as described above.</li>
+        <li><strong>Google or Apple</strong> &mdash; if you choose to sign in with them, solely to authenticate you.</li>
       </ul>
-      <p>We do not share your information with advertisers or data brokers, and we do not sell it. We may disclose information if required by law, or to protect the rights, safety, or property of Echo or its users.</p>
+      <p>We do not share your information with advertisers, data brokers, insurers, employers, or any other third party, and we do not sell it. We may disclose information if required by law, or to protect the rights, safety, or property of Echo or its users.</p>
 
       <h2>Your data, your control</h2>
       <ul>
-        <li><strong>Export</strong> &mdash; a complete copy of everything Echo holds about you, any time, from Progress &rarr; Settings &rarr; Export my data.</li>
-        <li><strong>Delete your account</strong> &mdash; permanently, right from the app, from Progress &rarr; Settings &rarr; Delete my account. Immediate and irreversible.</li>
-        <li><strong>Correct or edit</strong> &mdash; edit or delete individual entries and to-dos at any time within the app.</li>
+        <li><strong>Export</strong> &mdash; a complete copy of everything Echo holds about you, any time, from the account menu &rarr; Export my data.</li>
+        <li><strong>Delete your account</strong> &mdash; permanently, right from the app, from the account menu &rarr; Delete my account. Immediate and irreversible: it removes your journal entries, to-dos, lists, medicines, dose history, scan history, and progress.</li>
+        <li><strong>Correct or edit</strong> &mdash; edit or delete individual entries, to-dos, list items and medicines at any time within the app.</li>
       </ul>
 
       <h2>Data retention</h2>
       <p>We retain your information for as long as your account is active. If you delete your account, your data is deleted immediately and permanently, aside from standard database backup rotation (typically a few days) after which it is fully purged.</p>
+      <p>Dose history is kept for as long as your account is active, so that adherence over time remains answerable. Deleting a medicine from the Meds tab does not delete the record that you took it; deleting your account removes both.</p>
 
       <h2>Security</h2>
       <ul>
         <li>All data is encrypted in transit (HTTPS/TLS).</li>
-        <li>Row-level security policies ensure only you can read or write your own entries, to-dos, and scans.</li>
+        <li>Row-level security policies ensure only you can read or write your own records.</li>
         <li>The AI provider API key is stored server-side only and is never exposed to the app or any client device.</li>
       </ul>
 
@@ -161,7 +181,7 @@
       <p>Echo is not directed at children under 13, and we do not knowingly collect information from children under that age.</p>
 
       <h2>International users</h2>
-      <p>Your information may be processed in countries other than your own, wherever our service providers (Supabase, Anthropic) operate their infrastructure.</p>
+      <p>Your information may be processed in countries other than your own, wherever our service providers (Supabase, Anthropic, Apple) operate their infrastructure.</p>
 
       <h2>Changes to this policy</h2>
       <p>We may update this policy from time to time. We'll update the "Last updated" date above when we do.</p>
